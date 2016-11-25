@@ -9,7 +9,12 @@
             body {
                 background-color: #222;
                 color: #ddd;
+                height: 100%;
                 font-family: 'Raleway', sans-serif;
+            }
+            body,
+            html {
+                height: 100%;
             }
             h1 {
                 color: #ff5252;
@@ -43,15 +48,30 @@
                 margin-left: 5px;
             }
             .link > i {
-              color: #333;
-              font-size: 1.8em;
+                color: #333;
+                font-size: 1.8em;
             }
             .link {
+                white-space: nowrap;
                 position: relative;
                 margin: 10px 10px 10px 30px;
             }
             .link:hover > i {
-              color: #ff5252;
+                color: #ff5252;
+            }
+            img.resize {
+                width: 300px;
+                max-width: 100%;
+                height: auto;
+            }
+            #footer {
+                text-align: center;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                height: 100px;
+                width: 100%;
+                background: #222;
             }
         </style>
     </head>
@@ -64,15 +84,21 @@
                     Australian address api using the GNAF data (in progress)
                 </p>
                 <span class="link">
-                  <i class="fa fa-external-link-square" aria-hidden="true"></i>
-                    <a href="http://gnaf.namelesslabs.com/"> gnaf.namelesslabs.com </a>
+                    <i class="fa fa-external-link-square" aria-hidden="true"></i>
+                    <a href="http://gnaf.namelesslabs.com/">
+                        gnaf.namelesslabs.com
+                    </a>
                 </span>
                 <span class="link">
                     <i class="fa fa-github-square" aria-hidden="true"></i>
-                    <a href='https://github.com/spid37/gnaf-lookup'> spid37/gnaf-lookup </a>
+                    <a href='https://github.com/spid37/gnaf-lookup'>
+                        spid37/gnaf-lookup
+                    </a>
                 </span>
             </div>
         </div>
-        <img src="namelesslabs-800.png">
+        <div id="footer">
+            <img class="resize" src="namelesslabs-800.png">
+        </div>
     </body>
 </html>
